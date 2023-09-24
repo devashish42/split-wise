@@ -29,7 +29,7 @@ public class ExpenseService {
         }
 
         ExpenseFactory factory = new ExpenseFactory(type);
-        Expense e = factory.createExpense(user, totalAmount, splitList.stream().toList());
+        Expense e = factory.createExpense(user, totalAmount, splitList);
         user.addExpense(e);
     }
 }
